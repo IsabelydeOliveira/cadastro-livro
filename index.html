@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">BIBLIOTECA</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarLivro">Cadastrar Livros</button>
+        <table id="tableLivro" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Código</th>
+                    <th>Gênero</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+             <tbody>
+              
+            </tbody> 
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Livro</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome"    data-index="new" class="modal-field" placeholder="Nome do Livro" required>
+                    <input type="text" id="autor"   data-index="new" class="modal-field" placeholder="Autor(a) do Livro" required>
+                    <input type="text" id="editora" data-index="new" class="modal-field" placeholder="Editora do Livro" required>
+                    <input type="text" id="codigo"  data-index="new" class="modal-field" placeholder="Código do Livro" required>
+                    <input type="text" id="genero"  data-index="new" class="modal-field" placeholder="Gênero do Livro" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
